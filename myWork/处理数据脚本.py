@@ -1,5 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+"""
+ author : ieyzz@pku.edu.cn
+ date: 2018.03.20
+ version: 0.1
+"""
 import os
 import cv2
 import shutil
@@ -12,6 +17,7 @@ def getHeightAndWidth(path='',img=''):#返回图像的高度和宽度
 def getGuessName(firstName=''):
     nameList=[]
     nameList.append(firstName+'.jpg')
+    nameList.append(firstName+'-.jpg')
     nameList.append(firstName+'.png')    
     nameList.append(firstName+'(1).jpg')  
     nameList.append(firstName+'(2).jpg')  
